@@ -5,15 +5,19 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class HomeViewModel extends ViewModel {
-
-//    private final MutableLiveData<String> mText;
+    private final MutableLiveData<Boolean> isLight;
 
     public HomeViewModel() {
-//        mText = new MutableLiveData<>();
-//        mText.setValue("This is home fragment");
+        isLight = new MutableLiveData<>();
+        isLight.setValue(true);
     }
 
-//    public LiveData<String> getText() {
-//        return mText;
-//    }
+    public void setIsLight(boolean value) {
+        isLight.setValue(value);
+    }
+
+    public LiveData<Boolean> isLight() {
+        return isLight;
+    }
+
 }

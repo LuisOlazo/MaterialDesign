@@ -11,5 +11,6 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
-    <string name="example_logo">example logo</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="light_mode">Light mode</string>
 </resources>
